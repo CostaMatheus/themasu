@@ -44,7 +44,6 @@ elipse{
 }
 
 html, body{
-  
   height: 100%;
 }
 
@@ -105,6 +104,14 @@ img{
   max-width: 100%;
 }
 
+
+#fullpage{
+  height: 100%;
+  position: relative;
+  touch-action: none;
+  transition: 700ms;
+}
+
 .navbar-header{
   position: fixed;
   top:0;
@@ -113,17 +120,12 @@ img{
   background-color: var(--neutral-08);
 }
 
-#fullpage{
-  height: 100%;
-  position: relative;
-  touch-action: none;
-}
-
 .section{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .container{
@@ -241,10 +243,11 @@ img{
 /*------------ FOOTER ------------*/
 
 
-.footer{
-  align-items:flex-start;
+.footer-container{
+  width: 100%;
+  display: flex;
   justify-content: space-between;
-  margin-top: 3.2rem;
+  gap: 2.4rem;
 }
 
 .footer-content{
@@ -290,7 +293,6 @@ img{
 .footer textarea{
   height: 12.8rem;
   resize: none;
-
 }
 
 .footer input:focus, .footer textarea:focus{
@@ -327,8 +329,6 @@ img{
   border-color: var(--tertiary-01);
   color: var(--tertiary-01);
 }
-
-
 
 .footer h3 a{
   display: inline-flex;
@@ -368,6 +368,18 @@ img{
   color: var(--tertiary-01);
   fill: var(--tertiary-01);
   transition: all .5s;
+}
+
+.brand{
+  width: 100%;
+  text-align: center;
+  padding: 5.6rem;
+  color: var(--neutral-01);
+  font-size: 2.0rem;
+}
+
+.brand strong{
+  color: var(--tertiary-01);
 }
 
 
