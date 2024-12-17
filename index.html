@@ -17,9 +17,10 @@
 
 <body>
   <elipse></elipse>
+
   <header class="navbar-header">
     <nav class="navbar container">
-      <a href="#" id="logo">
+      <a href="" id="logo">
         <svg width="166" height="25" viewBox="0 0 166 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_305_140)">
             <path d="M38.5067 24.1098V1.47561H43.562V24.1098H38.5067ZM31.3906 5.60569V1.15041H50.6781V5.60569H31.3906Z"
@@ -62,10 +63,10 @@
       </a>
 
       <ul class="menu">
-        <li><a href="#">Projetos</a></li>
+        <li><a href="#projects">Projetos</a></li>
         <li><a href="#">Currículo</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#contact">Contato</a></li>
       </ul>
 
       <ul class="social-media">
@@ -144,20 +145,20 @@
       </a>
     </nav>
   </header>
-  <div id="fullpage">
 
+  <div id="fullpage">
     <section class="section container first-pane">
       <div class="introduction container">
         <h1>Este é o Matheus, um <span>designer de produtos</span> apaixonado por transformar pixels em soluções.
           Confira
           meu trabalho.</h1>
-        <button href="#" class="primary-button-outline">
+        <a href="#projects" class="primary-button-outline">
           Ver Projetos
-        </button>
+        </a>
       </div>
     </section>
 
-    <section class="section container projects">
+    <section id="projects" class="section container second-pane">
       <ul class="projects-content">
         <li>
           <a href="#">
@@ -189,7 +190,7 @@
       </ul>
     </section>
 
-    <section class="section container footer">
+    <section id="contact" class="section container footer">
       <div class="footer-container">
         <div class="footer-content">
           <h2>Gostou do que viu? <br />entre em contato conosco.</h2>
