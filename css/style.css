@@ -237,14 +237,137 @@ img{
 }
 
 
+
+/*------------ FOOTER ------------*/
+
+
 .footer{
   align-items:flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+}
+
+.footer-content{
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  max-width: 100%;
+  gap: 2.4rem;
 }
 
 .footer form{
   display: flex;
   flex-direction: column;
+  gap: 1.6rem;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer label{
+  font-family: var(--outfit);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: var(--neutral-05);
+}
+
+.footer input, .footer textarea{
+  font-family: var(--outfit);
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom:  1px solid var(--neutral-05);
+  padding: 0.8rem 0;
+  color: var(--neutral-01);
+}
+
+.footer textarea{
+  height: 12.8rem;
+  resize: none;
+
+}
+
+.footer input:focus, .footer textarea:focus{
+  outline: none;
+  border-color: var(--neutral-01);
+}
+
+.footer input:-webkit-autofill,
+.footer input:-webkit-autofill:hover, 
+.footer input:-webkit-autofill:focus, 
+.footer input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--neutral-01);
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px var(--neutral-08);
+}
+
+.footer button{
+  padding: 1.6rem 2.4rem;
+  border: 0.2rem solid var(--neutral-01);
+  color: var(--neutral-01);
+  font-family: var(--outfit);
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top:1.6rem;
+  transition: all .5s;
+  font-size: 1.6rem;
+  
+}
+
+.footer button:hover{
+  border-color: var(--tertiary-01);
+  color: var(--tertiary-01);
+}
+
+
+
+.footer h3 a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer h3 a:hover, .footer h3 a:hover svg path{
+  color: var(--tertiary-01);
+  fill: var(--tertiary-01);
+}
+
+.social-media-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-media-content ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.social-media-content ul li a{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 2.0rem;
+  color: var(--neutral-04);
+  transition: all .5s;
+}
+
+.social-media-content ul li a:hover, .social-media-content ul li a:hover svg path{
+  color: var(--tertiary-01);
+  fill: var(--tertiary-01);
+  transition: all .5s;
 }
 
 
