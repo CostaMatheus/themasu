@@ -542,6 +542,7 @@ img {
     width: 100%;
     flex-direction: column;
     justify-content: center;
+    gap: 4.8rem;
     background-color: #000000;
     display: none;
     -webkit-animation: fadein 700ms;
