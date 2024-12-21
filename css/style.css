@@ -43,7 +43,8 @@ elipse{
   box-sizing: border-box;
 }
 
-html, body{
+body{
+  width: 100%;
   height: 100%;
 }
 
@@ -105,10 +106,15 @@ img{
 
 
 #fullpage{
+<<<<<<< HEAD
   /*height: 100%;*/
+=======
+  width: 100vw;
+  height: 100vh;
+>>>>>>> ddf5780d0b5214986534cc74241bfd4b4e7d7062
   position: relative;
-  touch-action: none;
   transition: 700ms;
+  overflow: hidden;
 }
 
 .navbar-header{
@@ -117,10 +123,34 @@ img{
   height: 0;
   z-index: 98;
   background-color: var(--neutral-08);
+
+}
+
+.menu-hamburger{
+  width: 32px;
+  height: 32px;
+  padding: 0.4rem;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+.menu-hamburger span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color:#fff;
+  border-radius: 3px;
 }
 
 .section{
+<<<<<<< HEAD
   /*height: 100vh;*/
+=======
+  width: 100vw;
+  height: 100vh;
+>>>>>>> ddf5780d0b5214986534cc74241bfd4b4e7d7062
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +161,7 @@ img{
   max-width:1216px;
   margin: 0 auto;
   position: relative;
+  padding-inline: 2.0rem;
 }
 
 /*---------------------- NAVBAR --------------*/
@@ -149,7 +180,7 @@ img{
 }
 
 .navbar{
-  padding: 48px;
+  padding-block: 4.8rem;
 }
 
 .menu{
@@ -218,9 +249,13 @@ img{
 
 .projects-content{
   display: flex;
-  justify-content: space-between;
   gap: 2.4rem;
 }
+
+.projects-content li{
+  width: 100%;
+}
+
 .projects-content a{
   display: flex;
   flex-direction: column;
@@ -316,11 +351,9 @@ img{
   font-weight: 700;
   background-color: transparent;
   cursor: pointer;
-  position: relative;
-  top:1.6rem;
   transition: all .5s;
   font-size: 1.6rem;
-  
+  margin-top: 2.4rem;
 }
 
 .footer button:hover{
@@ -369,9 +402,11 @@ img{
 }
 
 .brand{
-  width: 100%;
+  display: flex;
+  height: 7.2rem;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5.6rem;
   color: var(--neutral-01);
   font-size: 2.0rem;
 }
@@ -380,6 +415,111 @@ img{
   color: var(--tertiary-01);
 }
 
+.nav-dot-container{
+  position: fixed;
+  top: 50%;
+  right: 2.0rem;
+  transform: translateY(-50%);
+}
 
+.nav-dot{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius:20px;
+}
+
+.nav-dot.active span{
+  background: var(--primary-01);
+}
+
+.nav-dot span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--neutral-06);
+    transition: all 200ms ease;
+    margin: auto;
+}
+
+
+/*------------ MOBILE ----------------*/
+
+@media (max-width:480px){
+
+  h1{
+    font-size: 4.0rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+  }
+  
+  h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  
+  h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+  }
+
+  .navbar-header{
+    height: 96px;
+  }
+
+  .navbar{
+    padding-block: 3.2rem;
+  }
+
+  .menu-hamburger{
+    display: flex;
+  }
+
+  .menu, .social-media{
+    display: none;
+  }
+
+  .second-pane{
+    width: 100%;
+  }
+
+  .projects-content{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.4rem;
+
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .projects-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    scroll-snap-align: start;
+  }
+
+  .projects-content p{
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+  }
+
+  .nav-dot-container{
+    display: none;
+  }
+
+/*------ footer */
+
+  .footer-container{
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
 
 
