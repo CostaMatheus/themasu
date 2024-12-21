@@ -502,6 +502,10 @@ img{
     line-height: 2.8rem;
   }
 
+  .nav-dot-container{
+    display: none;
+  }
+
 /*------ footer */
   .footer-container{
     flex-direction: column;
