@@ -106,12 +106,8 @@ img{
 
 
 #fullpage{
-<<<<<<< HEAD
-  /*height: 100%;*/
-=======
-  width: 100vw;
-  height: 100vh;
->>>>>>> ddf5780d0b5214986534cc74241bfd4b4e7d7062
+  /*width: 100vw;
+  height: 100vh;*/
   position: relative;
   transition: 700ms;
   overflow: hidden;
@@ -145,12 +141,9 @@ img{
 }
 
 .section{
-<<<<<<< HEAD
-  /*height: 100vh;*/
-=======
-  width: 100vw;
-  height: 100vh;
->>>>>>> ddf5780d0b5214986534cc74241bfd4b4e7d7062
+  /*width: 100vw;
+  height: 100vh;*/
+
   display: flex;
   justify-content: center;
   align-items: center;
