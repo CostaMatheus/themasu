@@ -8,5 +8,5 @@ menuHamburger.addEventListener("click", function () {
 
 window.onscroll = () => {
     linksContainer.classList.remove("active");
-    menuHamburger.classList.toggle("active");
+    menuHamburger.classList.remove("active");
 };
