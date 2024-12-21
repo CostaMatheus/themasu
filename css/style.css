@@ -117,6 +117,26 @@ img{
   height: 0;
   z-index: 98;
   background-color: var(--neutral-08);
+
+}
+
+.menu-hamburger{
+  width: 48px;
+  height: 32px;
+  padding: 0.4rem;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+.menu-hamburger span{
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color:#fff;
+  border-radius: 3px;
 }
 
 .section{
@@ -131,6 +151,7 @@ img{
   max-width:1216px;
   margin: 0 auto;
   position: relative;
+  padding-inline: 2.0rem;
 }
 
 /*---------------------- NAVBAR --------------*/
@@ -218,9 +239,13 @@ img{
 
 .projects-content{
   display: flex;
-  justify-content: space-between;
   gap: 2.4rem;
 }
+
+.projects-content li{
+  width: 100%;
+}
+
 .projects-content a{
   display: flex;
   flex-direction: column;
@@ -316,11 +341,9 @@ img{
   font-weight: 700;
   background-color: transparent;
   cursor: pointer;
-  position: relative;
-  top:1.6rem;
   transition: all .5s;
   font-size: 1.6rem;
-  
+  margin-top: 2.4rem;
 }
 
 .footer button:hover{
@@ -369,9 +392,11 @@ img{
 }
 
 .brand{
-  width: 100%;
+  display: flex;
+  height: 7.2rem;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 5.6rem;
   color: var(--neutral-01);
   font-size: 2.0rem;
 }
@@ -380,6 +405,74 @@ img{
   color: var(--tertiary-01);
 }
 
+/*------------ MOBILE ----------------*/
 
+@media (max-width:480px){
+  .menu-hamburger{
+    display: flex;
+  }
+
+  .menu, .social-media{
+    display: none;
+  }
+
+  .second-pane{
+    width: 100%;
+  }
+
+  .projects-content{
+
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2.4rem;
+
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  }
+
+  .projects-content li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    scroll-snap-align: start;
+  }
+
+  h1{
+    font-size: 4.0rem;
+    font-weight: 600;
+    line-height: 4.8rem;
+  }
+  
+  h1 span{
+    color: var(--primary-01);
+  }
+  
+  h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+  }
+  
+  h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+  }
+  
+  
+  .projects-content p{
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+  }
+
+
+  .footer-container{
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
 
 
