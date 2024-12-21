@@ -107,7 +107,6 @@ img{
 #fullpage{
   height: 100%;
   position: relative;
-  touch-action: none;
   transition: 700ms;
 }
 
@@ -429,7 +428,7 @@ img{
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.6rem;
-  }
+  }git 
 
   .menu-hamburger{
     display: flex;
