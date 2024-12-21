@@ -123,6 +123,12 @@ img{
 
 }
 
+.links-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 4.8rem;
+}
+
 .menu-hamburger{
   width: 32px;
   height: 32px;
@@ -481,8 +487,27 @@ img{
     display: flex;
   }
 
-  .menu, .social-media{
-    display: none;
+  .links-container{
+    position: fixed;
+    top: 96px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 96px);
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+  }
+
+  .menu{
+    flex-direction: column;
+  }
+
+  .menu a{
+    padding-block: 1.6rem;
+  }
+
+  .social-media{
+    justify-content: center;
   }
 
   .second-pane{
