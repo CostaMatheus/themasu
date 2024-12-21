@@ -415,10 +415,6 @@ img{
     line-height: 4.8rem;
   }
   
-  h1 span{
-    color: var(--primary-01);
-  }
-  
   h2{
     font-size: 2.4rem;
     font-weight: 700;
@@ -452,15 +448,14 @@ img{
   }
 
   .projects-content{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.4rem;
 
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2.4rem;
-
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
   }
 
   .projects-content li{
