@@ -132,8 +132,8 @@ img {
 
 .links-container {
   display: flex;
-  justify-content: space-between;
-  gap: 4.8rem;
+  justify-content: space-evenly;
+  flex: 1;
 }
 
 .menu-hamburger {
