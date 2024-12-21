@@ -55,6 +55,7 @@ html{
 body{
   background-color: black;
   font-size: 100%;
+  padding-top: 12.4rem;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -148,6 +149,7 @@ img{
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-block: 12.8rem;
 }
 
 .container{
@@ -440,6 +442,14 @@ img{
 /*------------ MOBILE ----------------*/
 
 @media (max-width:480px){
+
+  body{
+    padding-top: 9.6rem;
+  }
+
+  .section{
+    padding-block: 9.6rem;
+  }
 
   h1{
     font-size: 4.0rem;
