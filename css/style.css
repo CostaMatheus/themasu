@@ -686,7 +686,7 @@ img {
   .projects-content {
     display: grid;
     grid-auto-flow: column;
-    gap: 2.4rem;
+    gap: 1.6rem;
 
     overflow-x: auto;
     overscroll-behavior-x: contain;
