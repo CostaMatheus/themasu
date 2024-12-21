@@ -130,10 +130,18 @@ img {
 
 }
 
+.navbar #logo {
+  display: none;
+}
+
 .links-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex: 1;
+}
+
+.links-container #logo {
+  display: flex;
 }
 
 .menu-hamburger {
@@ -503,6 +511,10 @@ img {
     padding-block: 3.2rem;
   }
 
+  .navbar #logo {
+    display: flex;
+  }
+
   .menu-hamburger {
     position: relative;
     display: flex;
@@ -554,6 +566,10 @@ img {
     -o-animation: fadein 700ms;
     /* Opera < 12.1 */
     animation: fadein 700ms;
+  }
+
+  .links-container #logo {
+    display: none;
   }
 
   .links-container.active {
