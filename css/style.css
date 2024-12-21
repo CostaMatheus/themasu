@@ -43,7 +43,8 @@ elipse{
   box-sizing: border-box;
 }
 
-html, body{
+body{
+  width: 100%;
   height: 100%;
 }
 
@@ -109,7 +110,7 @@ img{
   height: 100%;
   position: relative;
   transition: 700ms;
-
+  overflow: hidden;
 }
 
 .navbar-header{
@@ -140,6 +141,7 @@ img{
 }
 
 .section{
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -404,6 +406,35 @@ img{
 .brand strong{
   color: var(--tertiary-01);
 }
+
+.nav-dot-container{
+  position: fixed;
+  top: 50%;
+  right: 2.0rem;
+  transform: translateY(-50%);
+}
+
+.nav-dot{
+  display: flex;
+  width: 24px;
+  height: 24px;
+  border-radius:20px;
+}
+
+.nav-dot.active span{
+  background: var(--primary-01);
+}
+
+.nav-dot span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--neutral-06);
+    transition: all 200ms ease;
+    margin: auto;
+}
+
 
 /*------------ MOBILE ----------------*/
 
