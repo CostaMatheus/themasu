@@ -291,6 +291,7 @@ img {
   flex-direction: row;
   color: var(--secondary-01);
   font-weight: 700;
+  transition: all 700ms;
 }
 
 .btn-link:hover{
