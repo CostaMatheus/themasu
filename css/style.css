@@ -284,12 +284,13 @@ img {
 }
 
 .btn-link{
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   gap:0.8rem;
   flex-direction: row;
   color: var(--secondary-01);
+  font-weight: 700;
 }
 
 .btn-link:hover{
