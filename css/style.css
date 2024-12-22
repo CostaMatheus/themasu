@@ -697,9 +697,14 @@ img {
   .projects-content li {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 300px;
+    align-items: flex-start;
     scroll-snap-align: start;
+    width: 280px;
+  }
+
+  .projects-content li img{
+    width: 100%;
+
   }
 
   .projects-content p {
