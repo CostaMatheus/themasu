@@ -277,12 +277,22 @@ img {
 }
 
 .projects-content li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
   width: 100%;
 }
 
-.projects-content a {
+.btn-link{
+  font-size: 2.4rem;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap:0.8rem;
+  flex-direction: row;
+  color: var(--secondary-01);
+}
+
+.btn-link:hover{
   gap: 1.6rem;
 }
 
