@@ -507,6 +507,19 @@ img {
 
 @media (max-width:480px) {
 
+  elipse {
+    top: -128px;
+    left: -348px;
+   
+  }
+  
+  elipse:nth-of-type(2){
+    right: -297px;
+  }
+  elipse:nth-of-type(3){
+    right: -297px;
+  }
+
   body {
     padding-top: 9.6rem;
   }
