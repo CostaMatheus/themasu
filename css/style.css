@@ -34,7 +34,7 @@ elipse {
   background-color: var(--primary-01);
   border-radius: 100%;
   filter: blur(250px);
-  z-index: 99;
+ 
 }
 
 elipse:nth-of-type(2){
@@ -140,7 +140,7 @@ img {
   position: fixed;
   top: 0;
   height: 0;
-  z-index: 98;
+  z-index: -1;
   background-color: var(--neutral-08);
 
 }
