@@ -1,0 +1,11 @@
+.introduction {
+  position: relative;
+  text-align: center;
+}
+
+.introduction p {
+  font-family: "Outfit", sans-serif;
+  font-size: 7.2rem;
+  font-weight: 700;
+  color: var(--neutral-01);
+}

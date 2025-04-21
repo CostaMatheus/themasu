@@ -1,0 +1,167 @@
+.projects-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.projects-content li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  cursor: pointer;
+  transition: transform .2s cubic-bezier(.55, .085, .68, .53);
+  z-index: 1;
+  position: relative;
+}
+
+.projects-content li:hover{
+  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.11) 4px 20px 16px 1px;
+}
+
+.projects-content-container{
+  position: relative;
+}
+
+.projects-content-link{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 20;
+}
+
+.projects-content-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000 100%);
+}
+
+.projects-content li:hover .projects-content-overlay{
+  background: linear-gradient(to top, rgba(0, 0, 0) 0, rgba(0, 0, 0, .3) 100%);
+}
+
+.projects-content-container img{
+  border: 1px solid black;
+}
+
+.projects-content li:hover .btn-link{
+  opacity: 1;
+}
+
+#flexblog{
+  background: hsl(223, 97%, 59%);
+}
+
+#flexblog:hover{
+  background: hsl(223, 95%, 55%);
+}
+
+#cativou{
+  background: hsl(120, 79%, 62%);
+}
+
+#cativou:hover{
+  background: hsl(120, 60%, 40%);
+}
+
+#vveio{
+  background: hsl(260, 100%, 27%);
+}
+
+#vveio:hover{
+  background: hsl(260, 800%, 17%);
+}
+
+#consulta_plus{
+  background: hsl(240, 85%, 68%);
+}
+
+#consulta_plus:hover{
+  background: hsl(240, 85%, 58%);
+}
+
+#wildbeast{
+  background: hsl(264, 93%, 73%);
+}
+
+#wildbeast:hover{
+  background: hsl(264, 84%, 61%);
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  right:0;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+  padding: 24px 24px 32px 24px;
+}
+
+.description p {
+  font-size: 2.4em;
+}
+
+.tag-group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag{
+  font-size: 16px;
+  color: #fff;
+  font-family: var(--zillab);
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.tag::before{
+  content: '# ';
+}
+
+@media (max-width:480px){
+  #projects{
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .projects-content {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .projects-content li {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    scroll-snap-align: start;
+    width: 280px;
+  }
+
+  .projects-content li img{
+    width: 100%;
+
+  }
+
+  .projects-content p {
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+  }
+
+   
+}
