@@ -133,16 +133,17 @@
 }
 
 @media (max-width:480px){
+ 
   #projects{
+    overflow: auto;
+  }
+
+  .projects-content {
+    grid-auto-flow: column;
     overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-  }
-
-  .projects-content {
-    display: flex;
-    gap: 1.6rem;
   }
 
   .projects-content li {
@@ -155,13 +156,10 @@
 
   .projects-content li img{
     width: 100%;
-
   }
 
   .projects-content p {
     font-size: 2.0rem;
     line-height: 2.8rem;
   }
-
-   
 }
