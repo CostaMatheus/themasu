@@ -15,7 +15,7 @@
   padding-bottom: 4.8rem;
 }
 
-.navbar #logo-mobile {
+#logo-mobile {
   display: none;
 }
 
@@ -136,7 +136,7 @@
     padding-block: 3.2rem;
   }
 
-  .navbar #logo {
+ #logo-mobile {
     display: flex;
   }
 
