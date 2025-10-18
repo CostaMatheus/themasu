@@ -4,37 +4,37 @@ const decorativeImages = [
   {
     className:
       "absolute top-[20%] left-[62%] right-[0%] md:right-[15%] w-[50px] md:w-[70px] h-[35px] md:h-[45px]",
-    src: "/figmaAssets/group.png",
+    src: "figmaAssets/group.png",
     alt: "Group",
   },
   {
     className:
       "absolute top-[80%] right-[0%] left-[90%] md:left-[43%] w-[40px] md:w-[52px] h-[40px] md:h-[52px]",
-    src: "/figmaAssets/group-1.png",
+    src: "figmaAssets/group-1.png",
     alt: "Group",
   },
   {
     className:
       "absolute bottom-[17%] right-[3%] md:right-[27%] w-[70px] md:w-28 h-[55px] md:h-[88px]",
-    src: "/figmaAssets/group-2.png",
+    src: "figmaAssets/group-2.png",
     alt: "Group",
   },
   {
     className:
       "absolute top-[49%] left-[30%] md:left-[35%] w-[45px] md:w-[58px] h-[52px] md:h-[66px]",
-    src: "/figmaAssets/group-3.png",
+    src: "figmaAssets/group-3.png",
     alt: "Group",
   },
   {
     className:
       "absolute top-[20%] left-[8%] md:left-[33%] w-[25px] md:w-8 h-[26px] md:h-[33px]",
-    src: "/figmaAssets/group-4.png",
+    src: "figmaAssets/group-4.png",
     alt: "Group",
   },
   {
     className:
       "absolute top-[45%] right-[2%] md:right-[35%] w-[55px] md:w-[73px] h-[55px] md:h-[73px]",
-    src: "/figmaAssets/group-5.png",
+    src: "figmaAssets/group-5.png",
     alt: "Group",
   },
 ];

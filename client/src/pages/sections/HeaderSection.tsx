@@ -50,7 +50,7 @@ export const HeaderSection: React.FC<HeaderSectionProps> = ({ onNavigate }) => {
         <img
           className="relative w-32 md:w-52 h-auto"
           alt="Logo"
-          src="/figmaAssets/logo.svg"
+          src="figmaAssets/logo.svg"
         />
 
         <nav className="hidden md:inline-flex items-center justify-center gap-8">
@@ -71,7 +71,7 @@ export const HeaderSection: React.FC<HeaderSectionProps> = ({ onNavigate }) => {
         <img
           className="hidden md:block relative flex-[0_0_auto]"
           alt="Social media links"
-          src="/figmaAssets/social-media-links.svg"
+          src="figmaAssets/social-media-links.svg"
         />
 
         <Button
