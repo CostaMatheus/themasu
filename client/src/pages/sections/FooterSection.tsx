@@ -47,25 +47,25 @@ const formFields = [
 
 const socialLinks = [
   {
-    icon: "/figmaAssets/linkedin.png",
+    icon: "figmaAssets/linkedin.png",
     text: "linkedin.com/in/themasu-costa",
     alt: "Linkedin",
     href: "https://linkedin.com/in/themasu-costa",
   },
   {
-    icon: "/figmaAssets/mail.png",
+    icon: "figmaAssets/mail.png",
     text: "matheus.costa@themasu.com",
     alt: "Mail",
     href: "mailto:matheus.costa@themasu.com",
   },
   {
-    icon: "/figmaAssets/group-1841.png",
+    icon: "figmaAssets/group-1841.png",
     text: "behance.net/themasu_design",
     alt: "Group",
     href: "https://behance.net/themasu_design",
   },
   {
-    icon: "/figmaAssets/intagram.png",
+    icon: "figmaAssets/intagram.png",
     text: "instagram.com/themasu.design",
     alt: "Intagram",
     href: "https://instagram.com/themasu.design",

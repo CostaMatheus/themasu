@@ -1,13 +1,29 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-const initialProjectsData = [
+interface Project {
+  id: number;
+  bgColor: string;
+  image?: string;
+  imageClasses?: string;
+  customContent?: boolean;
+  hasOverlay?: boolean;
+  tags: string;
+  tagColor: string;
+  title: string;
+  titleColor: string;
+  description: string;
+  descriptionColor: string;
+  buttonBg: string;
+  buttonText: string;
+}
+
+const initialProjectsData: Project[] = [
   {
     id: 1,
     bgColor: "bg-[#f7f7f7]",
-    image: "/figmaAssets/product.png",
+    image: "figmaAssets/product.png",
     imageClasses: "w-full max-w-[380.69px] h-auto",
     tags: "#UI / UX Design  #Identidade visual",
     tagColor: "text-[#2d0087]",
@@ -34,7 +50,7 @@ const initialProjectsData = [
   {
     id: 3,
     bgColor: "bg-[#1e1f1e]",
-    image: "/figmaAssets/close-up-hand-holding-phone-2.png",
+    image: "figmaAssets/close-up-hand-holding-phone-2.png",
     imageClasses: "w-full max-w-[654px] h-auto object-cover",
     hasOverlay: true,
     tags: "#UI / UX Design",
@@ -48,7 +64,7 @@ const initialProjectsData = [
   },
 ];
 
-const additionalProjects = [
+const additionalProjects: Project[] = [
   {
     id: 4,
     bgColor: "bg-[#e8f4f8]",
@@ -89,7 +105,7 @@ const additionalProjects = [
 
 export const ProjectsSection = (): JSX.Element => {
   const [showMore, setShowMore] = useState(false);
-  const [projects, setProjects] = useState(initialProjectsData);
+  const [projects, setProjects] = useState<Project[]>(initialProjectsData);
 
   const handleToggleProjects = () => {
     if (showMore) {
@@ -141,7 +157,7 @@ export const ProjectsSection = (): JSX.Element => {
                       <img
                         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-96 h-auto"
                         alt="Bottom"
-                        src="/figmaAssets/bottom.png"
+                        src="figmaAssets/bottom.png"
                       />
                     </div>
                   </div>
@@ -192,7 +208,7 @@ export const ProjectsSection = (): JSX.Element => {
                     <img
                       className="relative w-3 md:w-[14.5px] h-1.5"
                       alt="Vector"
-                      src="/figmaAssets/vector-36.svg"
+                      src="figmaAssets/vector-36.svg"
                     />
                   </Button>
                 </div>
