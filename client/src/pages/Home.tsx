@@ -22,14 +22,19 @@ export const Home = (): JSX.Element => {
       threshold: [0, 0.25, 0.5, 0.75, 1],
     };
 
-    const observerCallback: IntersectionObserverCallback = (entries) => {
-      if (entries.length === 0) return;
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      // Encontrar a seção mais visível
+      let mostVisibleEntry: IntersectionObserverEntry | null = null;
+      let maxRatio = 0;
 
-      const mostVisibleEntry = entries.reduce((prev, current) =>
-        prev.intersectionRatio > current.intersectionRatio ? prev : current,
-      );
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > maxRatio) {
+          maxRatio = entry.intersectionRatio;
+          mostVisibleEntry = entry;
+        }
+      });
 
-      if (mostVisibleEntry.isIntersecting) {
+      if (mostVisibleEntry && mostVisibleEntry.isIntersecting) {
         setActiveSection(mostVisibleEntry.target.id);
       }
     };
