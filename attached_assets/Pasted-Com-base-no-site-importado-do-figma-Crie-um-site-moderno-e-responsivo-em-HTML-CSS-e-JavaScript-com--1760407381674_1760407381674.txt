@@ -1,0 +1,36 @@
+Com base no site importado do figma Crie um site moderno e responsivo em HTML, CSS e JavaScript com as seguintes características:
+
+1. **Layout geral**
+   - O site deve ter estrutura de “one page scroll” vertical, onde cada seção ocupa 100% da largura e 100% da altura da tela.
+   - A rolagem entre as seções deve ser suave, com animação (scroll suave).
+   - As seções principais são: "Home", "Projetos", "Contato" e "Currículo".
+   - Inclua uma navbar fixa no topo com links para cada uma dessas seções.  
+     → Ao clicar em um link do menu, o site deve rolar suavemente até a seção correspondente (one page scroll animado).
+
+2. **Sessão de Projetos**
+   - Deve conter cards de projetos centralizados horizontal e verticalmente na tela.
+   - Ao clicar em “Ver mais”, devem ser carregados mais 3 cards fictícios dinamicamente (pode ser feito com JavaScript).
+   - O layout deve se adaptar bem em telas menores.
+   - Na versao mobile crie bullets como se fosse um carrossel e a navegacao sera na horizontal com o touch
+
+
+3. **Sessão Contato**
+   - O formulário deve ser funcional com os campos propostos   
+   - Ao enviar o formulário, exiba uma mensagem de confirmação simulando o envio (sem backend real, apenas alerta ou mensagem na tela).
+
+
+4. **Sessão Currículo**
+   - Ao clicar em “Currículo” na navbar, deve abrir uma **nova página** (curriculo.html) sem sair do tite e abrir nova guia no navegador, com um currículo fictício.
+   - O currículo deve conter nome, foto, resumo profissional, habilidades, experiências e formação.
+   - Use uma tipografia limpa e um layout minimalista e bem organizado. seguindo o padrao visual do site.
+
+5. **Design e estilo**
+   - A transição entre seções e elementos deve ter leveza e fluidez (use `scroll-behavior: smooth;` e pequenas animações em CSS).
+   - Mantenha padding e margens equilibradas para evitar que os elementos fiquem colados às bordas.
+
+6. **Extras**
+   - Utilize JavaScript puro (sem frameworks) para as interações de “Ver mais” e o comportamento de rolagem suave.
+   - Certifique-se de que o site seja 100% responsivo e agradável em desktop e mobile.
+   - Organize o projeto em arquivos separados: `index.html`, `style.css`, `script.js`, e `curriculo.html`.
+
+Resumindo: um site de rolagem única (one page scroll) com transição suave entre seções de tela cheia, cards centralizados na sessão de projetos com carregamento dinâmico, formulário funcional de contato e uma página de currículo fictício acessada pela navbar.
