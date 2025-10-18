@@ -1,25 +1,9 @@
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
-interface Project {
-  id: number;
-  bgColor: string;
-  image?: string;
-  imageClasses?: string;
-  customContent?: boolean;
-  hasOverlay?: boolean;
-  tags: string;
-  tagColor: string;
-  title: string;
-  titleColor: string;
-  description: string;
-  descriptionColor: string;
-  buttonBg: string;
-  buttonText: string;
-}
-
-const initialProjectsData: Project[] = [
+const initialProjectsData = [
   {
     id: 1,
     bgColor: "bg-[#f7f7f7]",
@@ -64,7 +48,7 @@ const initialProjectsData: Project[] = [
   },
 ];
 
-const additionalProjects: Project[] = [
+const additionalProjects = [
   {
     id: 4,
     bgColor: "bg-[#e8f4f8]",
@@ -105,7 +89,7 @@ const additionalProjects: Project[] = [
 
 export const ProjectsSection = (): JSX.Element => {
   const [showMore, setShowMore] = useState(false);
-  const [projects, setProjects] = useState<Project[]>(initialProjectsData);
+  const [projects, setProjects] = useState(initialProjectsData);
 
   const handleToggleProjects = () => {
     if (showMore) {
