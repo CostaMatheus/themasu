@@ -3,18 +3,18 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
-export default defineConfig({
-  base: "/themasu/",
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? "/themasu/" : "/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
+          import("@replit/vite-plugin-cartographer").then((m) =>
             m.cartographer(),
           ),
-          await import("@replit/vite-plugin-dev-banner").then((m) =>
+          import("@replit/vite-plugin-dev-banner").then((m) =>
             m.devBanner(),
           ),
         ]
@@ -33,9 +33,11 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
+    host: '0.0.0.0',
+    port: 5173,
     fs: {
       strict: true,
       deny: ["**/.*"],
     },
   },
-});
+}));
