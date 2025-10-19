@@ -4,7 +4,7 @@ import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? "/themasu/" : "/",
+  base: "/",
   plugins: [
     react(),
     runtimeErrorOverlay(),
